@@ -1,10 +1,10 @@
 # Ad Slide Builder (Nano Banana)
 
-Streamlit app that converts a premade 1080p JPG advertisement into a polished 1080 × 1920 template-ready slide using Nano Banana Pro (or the free tier when Pro is unavailable).
+Streamlit app that converts a premade 1080p JPG advertisement into a polished 1080 × 1920 template-ready slide using the standard Nano Banana model (with optional Pro overrides if you provide them).
 
 ## Features
 - Drag-and-drop JPG upload plus store selector that auto-loads the matching template (see `config/templates.json`).
-- Nano Banana client tries the Pro model first, then falls back to the free tier; a mock mode keeps development unblocked without an API key.
+- Nano Banana client uses the regular model by default; optionally wire up the Pro tier via secrets if you have access, and mock mode keeps development unblocked without an API key.
 - Automatic extraction of the product cut-out and visible text (product title, price, Spanish + English copy) directly from the uploaded ad.
 - Smart placement of the cut-out inside template-specific bounding boxes with aspect-ratio-safe scaling and light edge smoothing only.
 - Text fields are redrawn inside the template with editable forms so you can tweak wording before exporting.

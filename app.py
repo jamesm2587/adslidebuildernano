@@ -27,8 +27,8 @@ def get_banana_client() -> NanoBananaClient:
     secrets_cfg = st.secrets["banana"] if "banana" in st.secrets else {}
     api_key = secrets_cfg.get("api_key") or os.getenv("BANANA_API_KEY")
     base_url = secrets_cfg.get("base_url") or os.getenv("BANANA_BASE_URL")
-    pro_model = secrets_cfg.get("pro_model") or os.getenv("BANANA_PRO_MODEL") or "nano-banana-pro"
-    free_model = secrets_cfg.get("free_model") or os.getenv("BANANA_FREE_MODEL") or "nano-banana-lite"
+    pro_model = secrets_cfg.get("pro_model") or os.getenv("BANANA_PRO_MODEL") or None
+    free_model = secrets_cfg.get("free_model") or os.getenv("BANANA_FREE_MODEL") or "nano-banana"
     env_mock = os.getenv("BANANA_MOCK_MODE", "").lower() in {"1", "true", "yes"}
     mock_mode = bool(secrets_cfg.get("mock_mode", False)) or env_mock
     return NanoBananaClient(
