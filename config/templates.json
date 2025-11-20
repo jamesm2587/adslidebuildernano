@@ -1,0 +1,40 @@
+{
+  "stores": [
+    {
+      "id": "freshmart",
+      "name": "FreshMart",
+      "template_path": "assets/templates/freshmart.png",
+      "product_area": {"x": 160, "y": 420, "width": 760, "height": 880},
+      "text_fields": {
+        "product_name": {"x": 170, "y": 1380, "size": 72, "color": "#FFFFFF"},
+        "price": {"x": 170, "y": 1475, "size": 96, "color": "#FFD966"},
+        "spanish_copy": {"x": 170, "y": 1580, "size": 60, "color": "#FFFFFF"},
+        "english_copy": {"x": 170, "y": 1680, "size": 52, "color": "#CFE8CF"}
+      }
+    },
+    {
+      "id": "casatienda",
+      "name": "Casa Tienda",
+      "template_path": "assets/templates/casatienda.png",
+      "product_area": {"x": 150, "y": 420, "width": 780, "height": 900},
+      "text_fields": {
+        "product_name": {"x": 170, "y": 1380, "size": 70, "color": "#FFFFFF"},
+        "price": {"x": 170, "y": 1480, "size": 92, "color": "#FFE9C7"},
+        "spanish_copy": {"x": 170, "y": 1585, "size": 58, "color": "#FFFFFF"},
+        "english_copy": {"x": 170, "y": 1685, "size": 52, "color": "#FFE9C7"}
+      }
+    },
+    {
+      "id": "urbanbodega",
+      "name": "Urban Bodega",
+      "template_path": "assets/templates/urbanbodega.png",
+      "product_area": {"x": 190, "y": 430, "width": 700, "height": 860},
+      "text_fields": {
+        "product_name": {"x": 200, "y": 1385, "size": 68, "color": "#F4F4F4"},
+        "price": {"x": 200, "y": 1485, "size": 100, "color": "#F6C90E"},
+        "spanish_copy": {"x": 200, "y": 1590, "size": 54, "color": "#F4F4F4"},
+        "english_copy": {"x": 200, "y": 1690, "size": 50, "color": "#B7B7C6"}
+      }
+    }
+  ]
+}
